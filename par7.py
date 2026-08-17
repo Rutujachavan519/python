@@ -12,13 +12,14 @@ The user enters a paragraph, and the program analyzes it to count:
     - Total digits
 """
 
-print("=" * 45)
+print("=" * 55)
 print("             TEXT ANALYZER TOOL")
-print("=" * 45)
+print("=" * 55)
 
 paragraph = input("Enter a paragraph:\n")
 
 # ------------ Basic Info using len() and slicing ------------
+
 total_length = len(paragraph)
 
 print("\n----- Basic Info -----")
@@ -36,9 +37,9 @@ other_count = 0
 
 vowels = "aeiouAEIOU"
 
-# --------------- Traversal using indexing ---------------
+# --------------- Traversal using indexing -------------------
 for i in range(len(paragraph)):
-    ch = paragraph[i]       # accessing character using index
+    ch = paragraph[i]       
 
     if ch == " ":
         space_count = space_count + 1
@@ -53,10 +54,10 @@ for i in range(len(paragraph)):
         digit_count = digit_count + 1
 
     else:
-        other_count = other_count + 1       # punctuation, symbols, etc.
+        other_count = other_count + 1       
 
 # --------------- Word Count ---------------
-words = paragraph.split()       # splits paragraph into a list of words
+words = paragraph.split()       
 word_count = len(words)
 
 # --------------- Display Results ---------------
